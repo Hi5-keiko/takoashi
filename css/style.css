@@ -1590,7 +1590,7 @@ footer {
     top: 0;
     left: 100%;
     z-index: 80;
-    background-color: #0E2B49;
+    background-color: var(--main-color);
     transition: all 0.5s;
   }
   .menu-content ul {
@@ -2831,7 +2831,7 @@ footer {
     top: 0;
     left: 100%;
     z-index: 80;
-    background-color: #0E2B49;
+    background-color: var(--main-color);
     transition: all 0.5s;
   }
   .menu-content ul {
