@@ -1,3 +1,54 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+  const menuLinks = document.querySelectorAll('.menu-content a');
+  const menuCheckbox = document.getElementById('menu-btn-check');
+
+  function closeMenu() {
+    menuLinks.forEach(link => link.classList.add('closed'));
+
+    setTimeout(() => {
+      menuCheckbox.checked = false;
+      menuLinks.forEach(link => link.classList.remove('closed'));
+    }, 300);
+  }
+
+  // リンククリックで閉じる
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // スクロールで閉じる
+  window.addEventListener('scroll', () => {
+    if (menuCheckbox.checked) closeMenu();
+  });
+
+  // リサイズで閉じる
+  window.addEventListener('resize', () => {
+    if (menuCheckbox.checked) closeMenu();
+  });
+
+  // フッター付近で非表示
+  const bottomMenu = document.querySelector(".bottom-menu");
+  const footer = document.querySelector("footer");
+
+  function checkFooterVisibility() {
+    if (!footer || !bottomMenu) return;
+
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (footerRect.top < windowHeight) {
+      bottomMenu.classList.add("hide");
+    } else {
+      bottomMenu.classList.remove("hide");
+    }
+  }
+
+  window.addEventListener("scroll", checkFooterVisibility);
+
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const steps = document.querySelectorAll(".service__step");
   const items = document.querySelectorAll(".service__item");
@@ -49,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".project-stories__tabs .tab");
