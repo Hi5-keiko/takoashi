@@ -1448,11 +1448,7 @@ footer {
   }
 
   .other-header__menu-inner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-right: 25px;
-    color: var(--main-color);
+    display: none;
   }
 
   .other-header .menu a {
@@ -2689,11 +2685,7 @@ footer {
   }
 
   .other-header__menu-inner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-right: 25px;
-    color: var(--main-color);
+    display: none;
   }
 
   .other-header .menu a {
@@ -3260,6 +3252,9 @@ footer {
   }
 
   .project p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
   /*  text-align: center;
     margin-bottom: 60px;*/
   }
@@ -3423,7 +3418,7 @@ footer {
   }
 
   .panels__spttl-01 {
-	display: block;
+    display: block;
     width: 22%;
     background-color: var(--main-color);
     color: #fff;
@@ -3432,7 +3427,7 @@ footer {
   }
 
   .panels__spttl-02 {
-	display: block;	  
+    display: block;
     width: 12%;
     background-color: var(--main-color);
     color: #fff;
@@ -3703,7 +3698,7 @@ footer {
     padding-top: 24px;
     padding-bottom: 24px;
     width: 100%;
-    display: flex;
+    display: block;
     align-items: center;
   }
 
@@ -3712,7 +3707,7 @@ footer {
   }
   .Form-Item-Label {
     width: 100%;
-    max-width: 280px;
+    max-width: 90%;
     letter-spacing: 0.05em;
     font-weight: bold;
     font-size: 18px;
@@ -3743,13 +3738,14 @@ footer {
   .Form-Item-Input {
     border: 1px solid #ddd;
     border-radius: 6px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
     padding-left: 1em;
     padding-right: 1em;
     height: 48px;
     flex: 1;
-    width: 100%;
-    max-width: 920px;
+    width: 80%;
+    max-width: 100%;
     background: #eaedf2;
     font-size: 18px;
   }
@@ -3757,13 +3753,14 @@ footer {
   .Form-Item-Textarea {
     border: 1px solid #ddd;
     border-radius: 6px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
     padding-left: 1em;
     padding-right: 1em;
     height: 216px;
     flex: 1;
-    width: 100%;
-    max-width: 920px;
+    width: 80%;
+    max-width: 100%;
     background: #eaedf2;
     font-size: 18px;
   }
