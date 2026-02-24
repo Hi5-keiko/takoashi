@@ -3423,7 +3423,8 @@ footer {
   }
 
   .panels__spttl-01 {
-    width: 21%;
+	display: block;
+    width: 22%;
     background-color: var(--main-color);
     color: #fff;
     padding: 5px 8px;
@@ -3431,6 +3432,7 @@ footer {
   }
 
   .panels__spttl-02 {
+	display: block;	  
     width: 12%;
     background-color: var(--main-color);
     color: #fff;
